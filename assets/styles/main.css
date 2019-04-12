@@ -1,33 +1,38 @@
+/* Variables */
 html {
   --cream: #f7f7d4;
   --yellow: #fefe33;
   --pink: #c21460;
   --light-green: #66b032;
   --dark-green: #1b3409;
-  --shadow: rgba(0, 0, 0, .2);
+  --shadow: rgba(0, 0, 0, .3);
+  --dark-shadow: rgba(0, 0, 0, .4);
 }
 
-body {
-  background-color: var(--cream);
-  margin: 0 auto;
-  padding: 0;
-}
-
+/* Elements */
 a {
   color: var(--light-green);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--pink)
+  color: var(--pink);
 }
 
 a:active {
-  color: var(--yellow)
+  color: var(--yellow);
 }
 
-p {
-  color: var(--dark-green);
+body {
+  background-color: var(--dark-green);
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--dark-green);
+  height: 50px;
+  width: 100%;
 }
 
 header {
@@ -38,15 +43,51 @@ header {
 }
 
 h1 {
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 0;
 }
 
-footer {
-  background-color: var(--dark-green);
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+h4 {
+  background-color: var(--shadow);
+  color: var(--light-green);
+  margin: 0;
+  padding: 0.5rem;
+}
+
+main {
+  background-color: var(--cream);
+  margin: auto;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  height: 128px;
+  padding: 1rem;
+  width: 128px;
+}
+
+/* Color classes */
+.cream { color: var(--cream); }
+.light-green { color: var(--light-green); }
+
+/* Other classes */
+.avatar {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 
 .contact {
@@ -56,15 +97,11 @@ footer {
   flex-direction: column;
   font-family: monospace;
   font-size: 1.25rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.header-1 {
-  color: var(--cream);
-}
-
-.header-2 {
-  color: var(--light-green);
+.footer {
+  color: var(--pink);
 }
 
 .nameplate {
@@ -73,3 +110,38 @@ footer {
   font-family: sans-serif;
   font-size: 1.5rem;
 }
+
+.padding {
+  padding: 0.75rem;
+}
+
+.project-card {
+  background-color: var(--dark-green);
+  display: flex;
+  margin: 1rem;
+}
+
+.project-card-description {
+  width: 350px;
+}
+
+.project-card-image {
+  align-items: center;
+  background-color: var(--dark-shadow);
+  display: flex;
+  justify-content: center;
+  min-height: 150px;
+  width: 150px;
+}
+
+.skills-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.summary {
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=main.css.map */
