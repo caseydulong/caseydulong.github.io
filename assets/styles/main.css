@@ -1,15 +1,15 @@
 /* Variables */
 html {
   --cream: #f7f7d4;
+  --clear-cream: rgba(247, 247, 212, .9);
   --yellow: #fefe33;
   --pink: #c21460;
   --light-green: #66b032;
   --dark-green: #1b3408;
   --darker-green: #142806;
+  --clear-darker-green: rgba(20, 40, 6, .9);
   --darkest-green: #0f1f05;
-  --shadow: rgba(0, 0, 0, .3);
-  --dark-shadow: rgba(0, 0, 0, .4);
-  --darken: darken(var(--dark-green), 5%);
+  --shadow: rgba(0, 0, 0, .4);
 }
 
 /* Elements */
@@ -27,6 +27,7 @@ a:active {
 }
 
 body {
+  background-color: var(--darkest-green);
   background-attachment: fixed;
   background-image: url("../images/forest-background.jpg");
   background-repeat: no-repeat;
@@ -47,13 +48,14 @@ footer {
 
 header {
   background-color: var(--dark-green);
-  box-shadow: 0px 10px 5px var(--dark-shadow);
+  box-shadow: 0px 10px 5px var(--shadow);
   display: flex;
   justify-content: space-between;
   margin: 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 h1 {
@@ -89,8 +91,8 @@ p {
 
 section {
   align-items: center;
-  background-color: var(--cream);
-  box-shadow: 10px 10px 5px var(--dark-shadow);
+  background-color: var(--clear-cream);
+  box-shadow: 10px 10px 5px var(--shadow);
   border: 1px solid var(--dark-green);
   display: flex;
   flex-direction: column;
@@ -127,6 +129,7 @@ section {
 
 .nameplate {
   align-items: center;
+  background-color: var(--dark-green);
   display: flex;
   font-family: sans-serif;
   font-size: 1.5rem;
@@ -138,13 +141,15 @@ section {
 
 .project-card {
   background-color: var(--dark-green);
-  box-shadow: 10px 10px 5px var(--dark-shadow);
+  box-shadow: 10px 10px 5px var(--shadow);
   display: flex;
   margin: 1rem;
 }
 
 .project-card-description {
-  /* width: 350px; */
+  color: var(--cream);
+  padding: .5rem;
+  text-align: left;
 }
 
 .project-card-image {
@@ -157,6 +162,7 @@ section {
 
 .project-image {
   height: 125px;
+  padding: 1rem;
   width: 125px;
 }
 
@@ -167,10 +173,8 @@ section {
   padding: 1rem;
 }
 
-.skills-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.skills-section svg {
+  margin: 1rem 0;
 }
 
 .summary {
@@ -187,6 +191,7 @@ section {
     margin: 0;
   }
   header {
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 0;
     flex-direction: column;
     position: relative;
@@ -200,19 +205,32 @@ section {
   }
   section {
     box-shadow: 0 0 0;
-    margin: 0;
+    margin: .5rem;
+  }
+  .avatar {
+    margin: .5rem;
+  }
+  .contact {
+    background-color: var(--clear-darker-green);
   }
   .project-card {
     box-shadow: 0 0 0;
-    flex-direction: column;
-    margin: 0;
+    /* flex-direction: column; */
+    margin: .5rem;
+  }
+  .project-card-description {
+    align-text: left;
   }
   .project-image {
     height: 75px;
     width: 75px;
   }
   .section-interior {
-    padding: 0;
+    padding: .5rem;
+  }
+  .summary {
+    padding: .5rem;
+    /* text-align: left; */
   }
 }
 
