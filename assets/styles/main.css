@@ -91,7 +91,7 @@ p {
 
 section {
   align-items: center;
-  background-color: var(--clear-cream);
+  background-color: var(--cream);
   box-shadow: 10px 10px 5px var(--shadow);
   border: 1px solid var(--dark-green);
   display: flex;
@@ -204,6 +204,7 @@ section {
     width: 100%;
   }
   section {
+    background-color: var(--clear-cream);
     box-shadow: 0 0 0;
     margin: .5rem;
   }
