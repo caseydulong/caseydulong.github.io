@@ -86,7 +86,6 @@ main {
 
 p {
   margin: 0;
-  text-align: justify;
 }
 
 section {
@@ -148,8 +147,11 @@ section {
 
 .project-card-description {
   color: var(--cream);
-  padding: .5rem;
-  text-align: left;
+  padding: .25rem;
+}
+
+.project-card-description > * {
+  margin: .25rem;
 }
 
 .project-card-image {
@@ -160,10 +162,23 @@ section {
   padding: .5rem;
 }
 
+.project-card-links {
+  align-items: center;
+  display: flex;
+}
+
+.project-card-links a {
+  margin-right: 1rem;
+}
+
 .project-image {
   height: 125px;
   padding: 1rem;
   width: 125px;
+}
+
+.project-image-sm {
+  display: none;
 }
 
 .section-interior {
@@ -180,6 +195,7 @@ section {
 .summary {
   color: var(--dark-green);
   padding: 1rem;
+  text-align: justify;
 }
 
 @media (max-width: 600px) {
@@ -195,9 +211,6 @@ section {
     box-shadow: 0 0 0;
     flex-direction: column;
     position: relative;
-  }
-  h2 {
-    /* margin-bottom: 1rem; */
   }
   main {
     margin: 0;
@@ -225,6 +238,12 @@ section {
   .project-image {
     height: 75px;
     width: 75px;
+  }
+  .project-image-sm {
+    display: inline;
+  }
+  .project-card-image {
+    display: none;
   }
   .section-interior {
     padding: .5rem;
