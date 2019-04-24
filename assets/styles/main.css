@@ -40,9 +40,11 @@ body {
 footer {
   align-items: center;
   background-color: var(--dark-green);
-  color: var(--yellow);
+  color: var(--light-green);
   display: flex;
+  justify-content: space-between;
   margin-top: 50px;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -122,8 +124,13 @@ section {
   padding: 0.5rem;
 }
 
-.footer-text {
-  padding: 1rem;
+.footer-easter-egg {
+  color: transparent;
+  user-select: none;
+}
+
+.footer-easter-egg:hover {
+  color: black;
 }
 
 .nameplate {
@@ -226,6 +233,9 @@ section {
   }
   .contact {
     background-color: var(--clear-darker-green);
+  }
+  .footer-easter-egg {
+    display: none;
   }
   .project-card {
     box-shadow: 0 0 0;
