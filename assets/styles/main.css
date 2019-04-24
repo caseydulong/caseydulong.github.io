@@ -130,7 +130,7 @@ section {
 }
 
 .footer-easter-egg:hover {
-  color: black;
+  color: var(--light-green);
 }
 
 .nameplate {
@@ -207,6 +207,7 @@ section {
 
 @media (max-width: 600px) {
   body {
+    background-image: none;
     padding-top: 0;
   }
   footer {
@@ -214,7 +215,7 @@ section {
     margin: 0;
   }
   header {
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
     box-shadow: 0 0 0;
     flex-direction: column;
     position: relative;
@@ -224,9 +225,9 @@ section {
     width: 100%;
   }
   section {
-    background-color: var(--clear-cream);
+    /* background-color: var(--clear-cream); */
     box-shadow: 0 0 0;
-    margin: .5rem;
+    margin: 0;
   }
   .avatar {
     margin: .5rem;
@@ -239,7 +240,6 @@ section {
   }
   .project-card {
     box-shadow: 0 0 0;
-    /* flex-direction: column; */
     margin: .5rem;
   }
   .project-card-description {
