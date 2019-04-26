@@ -2,8 +2,8 @@
 html {
   --cream: #f7f7d4;
   --clear-cream: rgba(247, 247, 212, .9);
-  --yellow: #fefe33;
-  --pink: #c21460;
+  --lemon: #fefe33;
+  --theme-pink: #c21460;
   --light-green: #66b032;
   --dark-green: #1b3408;
   --darker-green: #142806;
@@ -19,11 +19,11 @@ a {
 }
 
 a:hover {
-  color: var(--pink);
+  color: var(--theme-pink);
 }
 
 a:active {
-  color: var(--yellow);
+  color: var(--lemon);
 }
 
 body {
@@ -35,6 +35,23 @@ body {
   margin: 0 auto;
   padding: 0;
   padding-top: 88px;
+}
+
+button {
+  background-color: var(--light-green);
+  border: none;
+  box-shadow: 10px 10px 5px var(--shadow);
+  color: var(--dark-green);
+  padding: .5rem;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: var(--theme-pink);
+}
+
+button:active {
+  background-color: var(--lemon);
 }
 
 footer {
@@ -188,6 +205,10 @@ section {
   display: none;
 }
 
+.resume-download-container {
+  padding: 1rem;
+}
+
 .section-interior {
   align-items: center;
   display: flex;
@@ -210,13 +231,16 @@ section {
     background-image: none;
     padding-top: 0;
   }
+  button {
+    box-shadow: 5px 5px 2.5px var(--shadow);
+  }
   footer {
     justify-content: center;
     margin: 0;
   }
   header {
     /* background-color: rgba(0, 0, 0, 0); */
-    box-shadow: 0 0 0;
+    /* box-shadow: 0 0 0; */
     flex-direction: column;
     position: relative;
   }
@@ -226,7 +250,7 @@ section {
   }
   section {
     /* background-color: var(--clear-cream); */
-    box-shadow: 0 0 0;
+    /* box-shadow: 10px 10px 5px var(--shadow); */
     margin: 0;
   }
   .avatar {
@@ -239,7 +263,7 @@ section {
     display: none;
   }
   .project-card {
-    box-shadow: 0 0 0;
+    box-shadow: 5px 5px 2.5px var(--shadow);
     margin: .5rem;
   }
   .project-card-description {
