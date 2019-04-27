@@ -37,23 +37,6 @@ body {
   padding-top: 88px;
 }
 
-button {
-  background-color: var(--light-green);
-  border: none;
-  box-shadow: 10px 10px 5px var(--shadow);
-  color: var(--dark-green);
-  padding: .5rem;
-  margin: 1rem;
-}
-
-button:hover {
-  background-color: var(--theme-pink);
-}
-
-button:active {
-  background-color: var(--lemon);
-}
-
 footer {
   align-items: center;
   background-color: var(--dark-green);
@@ -205,8 +188,26 @@ section {
   display: none;
 }
 
-.resume-download-container {
-  padding: 1rem;
+.resume-button {
+  background-color: var(--light-green);
+  border: none;
+  box-shadow: 10px 10px 5px var(--shadow);
+  color: var(--dark-green);
+  padding: .5rem;
+  margin: 1rem;
+  user-select: none;
+}
+
+.resume-button:hover {
+  background-color: var(--theme-pink);
+  color: var(--dark-green);
+  text-decoration: none;
+}
+
+.resume-button:active {
+  background-color: var(--lemon);
+  color: var(--dark-green);
+  text-decoration: none;
 }
 
 .section-interior {
@@ -230,9 +231,6 @@ section {
   body {
     background-image: none;
     padding-top: 0;
-  }
-  button {
-    box-shadow: 5px 5px 2.5px var(--shadow);
   }
   footer {
     justify-content: center;
@@ -278,6 +276,9 @@ section {
   }
   .project-card-image {
     display: none;
+  }
+  .resume-button {
+    box-shadow: 5px 5px 2.5px var(--shadow);
   }
   .section-interior {
     padding: .5rem;
