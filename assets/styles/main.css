@@ -110,7 +110,7 @@ section {
 
 /* Other classes */
 .avatar {
-  border: 1px solid var(--dark-green);
+  /* border: 1px solid var(--dark-green); */
   border-radius: 50%;
   height: 300px;
   margin: 1rem;
