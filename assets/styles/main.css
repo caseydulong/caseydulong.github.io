@@ -114,6 +114,7 @@ section {
   border-radius: 50%;
   height: 300px;
   margin: 1rem;
+  margin-bottom: 0;
   width: 300px;
   object-fit: cover;
 }
@@ -228,6 +229,7 @@ section {
 .summary {
   color: var(--dark-green);
   padding: 1rem;
+  padding-bottom: 0;
   text-align: justify;
 }
 
